@@ -15,7 +15,7 @@ public class OrderControllerProxy implements OrderController {
   public String request(final String itemId) {
     TraceStatus status = null;
     try {
-      status = trace.begin("orderService.request()");
+      status = trace.begin("OrderControllerV2.request()");
       final String result = target.request(itemId);
       trace.end(status);
       return result;

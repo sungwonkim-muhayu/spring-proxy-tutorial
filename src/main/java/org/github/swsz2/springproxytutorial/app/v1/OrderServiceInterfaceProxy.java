@@ -15,7 +15,7 @@ public class OrderServiceInterfaceProxy implements OrderService {
   public void orderItem(final String itemId) {
     TraceStatus status = null;
     try {
-      status = trace.begin("orderRepository.orderItem()");
+      status = trace.begin("OrderService.orderItem()");
       target.orderItem(itemId);
       trace.end(status);
     } catch (final Exception exception) {
