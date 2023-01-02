@@ -4,7 +4,7 @@ import org.github.swsz2.springproxytutorial.app.OrderController;
 import org.github.swsz2.springproxytutorial.app.OrderService;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-@RequestMapping("v1")
+@RequestMapping
 public class OrderControllerV1 implements OrderController {
 
   private final OrderService orderService;
