@@ -1,4 +1,4 @@
-package org.github.swsz2.springproxytutorial.dynamicproxy;
+package org.github.swsz2.springproxytutorial.dynamicproxy.jdkproxy;
 
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
