@@ -30,11 +30,11 @@ public class TimeInvocationHandlerTests {
     final BInterface target = new BImplementation();
     final InvocationHandler invocationHandler = new TimeInvocationHandler(target);
     final BInterface proxy =
-            (BInterface)
-                    Proxy.newProxyInstance( // 프록시 생성
-                            BInterface.class.getClassLoader(),
-                            new Class[] {BInterface.class},
-                            invocationHandler);
+        (BInterface)
+            Proxy.newProxyInstance( // 프록시 생성
+                BInterface.class.getClassLoader(),
+                new Class[] {BInterface.class},
+                invocationHandler);
     proxy.call();
 
     log.info("target.getClass() = " + target.getClass());

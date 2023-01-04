@@ -1,10 +1,10 @@
 package org.github.swsz2.springproxytutorial.app.v3;
 
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.ResponseBody;
 
-@RestController
 @RequestMapping("v3")
+@ResponseBody
 public class OrderControllerV3 {
 
   private final OrderServiceV3 orderService;
